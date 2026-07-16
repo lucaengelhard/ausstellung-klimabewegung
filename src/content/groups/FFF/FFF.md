@@ -4,13 +4,13 @@ title: "Schulstreik fürs Klima: Fridays for Future (FFF)"
 logo: ./logo.svg
 gallery:
   - src: ./190620-fff-003.jpg
-    description: Test
+    description: Anreise mit Sonderzug zum Zentralstreik in Aachen, 20.06.2019. Luca Engelhard
   - src: ./190614-fff-002.jpg
-    description: Test
+    description: Demonstration von Fridays for Future Stuttgart, 14.06.2019. Luca Engelhard
   - src: ./190621-fff-004.jpg
-    description: Test
+    description: Zentralstreik in Aachen, 21.06.2019. Luca Engelhard
   - src: ./190920-fff-006.jpg
-    description: Test
+    description: Globaler Klimastreik am 20.09.2019, Stuttgart. Luca Engelhard
 ---
 
 Am 20. August 2018 weigert sich die 15-jährige Schwedin Greta Thunberg zur Schule zu gehen. Sie will damit auf die Klimakrise aufmerksam machen. Das macht weltweit Welle: Im Winter 2018/2019 schließen sich immer mehr Jugendliche dem Protest an.

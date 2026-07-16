@@ -4,7 +4,6 @@ title: "Umweltschutz in der DDR"
 logo: ./Naturschutzgebiet.svg
 gallery:
   - src: ./Bundesarchiv_Bild_183-1990-0125-015,_Blockade_der_Mülldeponie_Schöneiche_bei_Berlin.jpg
-    description: Test
 ---
 
 Die DDR hat große ökologische Probleme. Die Wirtschaft basiert auf Braunkohle und industrieller Landwirtschaft. Gewässer verschmutzen, Wälder sterben, saurer Regen fällt, Müllberge wachsen und Tierbestände gehen zurück. Anders als die BRD verlagert die DDR ihre Industrie nicht ins Ausland, sondern lagert für Devisen sogar noch Müll aus dem Westen.

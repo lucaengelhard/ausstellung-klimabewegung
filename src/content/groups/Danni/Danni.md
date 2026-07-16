@@ -4,9 +4,9 @@ title: "Danni bleibt!"
 logo: ./logo.svg
 gallery:
   - src: ./201003-danni-001.jpg
-    description: Test
+    description: Das Baumhaus „Villa Rosa“ im Barrio „Nirgendwo“, Dannenröder Wald, Oktober 2020. Luca Engelhard
   - src: ./201003-danni-002.jpg
-    description: Test
+    description: Aktivist:in klettert auf deren Baumhaus, Dannenröder Wald, Oktober 2020. Luca Engelhard
 ---
 
 Das Ziel des Aktionsbündnis „Danni bleibt“ ist der Erhalt des Dannenröder Waldes. Um eine schnellere Zufahrtsstraße zum Werk von Ferrero zu bauen - die A49 -, muss der Wald gerodet werden. 2019 besetzen Aktivist:innen den Wald und versuchen ihn mit Barrikaden und Baumhäusern zu schützen.

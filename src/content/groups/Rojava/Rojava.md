@@ -3,9 +3,8 @@ order: 9
 title: "Revolution in Kurdistan, Selbstverwaltung in Rojava"
 gallery:
   - src: ./2015_YPJ_01.jpg
-    description: Test
+    description: Kämpferinnen der YPJ, aufgenommen 2015 in Rojava. flickr, @kurdishstruggle
   - src: ./2015_YPJ_03.jpg
-    description: Test
 ---
 
 Im Jahr 2011 brechen in ganz Syrien Aufstände gegen den langjährigen Diktator Assad aus. Was folgt, ist ein teilweise bis heute andauernder Bürgerkrieg. Im Norden und Nordosten Syriens, genannt Rojava, leben traditionell Kurd:innen, aber auch Assyrer:innen und Araber:innen.

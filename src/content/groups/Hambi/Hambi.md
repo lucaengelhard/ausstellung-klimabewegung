@@ -4,13 +4,13 @@ title: "Hambi bleibt!"
 logo: ./308988287_469893451850275_7264267139648805716_n.jpg
 gallery:
   - src: ./tim-wagner-hambi-001.jpg
-    description: Test
+    description: Baumhaus in der Baumhaussiedlung Oaktown im Hambi, 2018. Tim Wagner
   - src: ./tim-wagner-hambi-002.jpg
-    description: Test
+    description: Verbindungen zwischen Baumhäusern im Hambi, 2018. Tim Wagner
   - src: ./tim-wagner-hambi-003.jpg
-    description: Test
+    description: Aktivist:in auf einer Hängebrücke im Hambi, 2018. Tim Wagner
   - src: ./2018_Hambacher-Forst-Grossdemo.jpg
-    description: Test
+    description: Großdemonstration zur letzten Räumung des Hambi, 13.09.2018. Tim Wagner
 ---
 
 Der Hambacher Forst ist ein Waldstück im rheinischen Braunkohlerevier. Seit den 1970er Jahren wurde der Wald vom Energiekonzern RWE gerodet, um den Tagebau zu erweitern. Im April 2012 wird das Waldstück erstmals von Aktivist:innen besetzt.

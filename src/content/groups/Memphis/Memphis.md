@@ -3,7 +3,7 @@ order: 2
 title: "Kampf gegen Rassismus und für Umweltgerechtigkeit: der Streik von Memphis, USA"
 gallery:
   - src: ./1968_I am a Man.jpg
-    description: Test
+    description: Streik der Arbeiter der Müllabfuhr in Memphis, USA, 1968. Ernest Withers
 ---
 
 Am 1. Februar 1968 werden in Memphis (USA) zwei Arbeiter der Müllabfuhr von einer defekten Müllpresse erdrückt und sterben. Bereits vier Jahre zuvor war etwas ähnliches passiert. Doch die Stadtverwaltung weigerte sich, die defekte Anlage auszutauschen. Derart unsichere Arbeitsbedingungen waren Resultat der racial segregation der USA.

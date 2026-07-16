@@ -4,7 +4,7 @@ title: "Organisation der Arbeiter:innenbewegung: die Naturfreunde"
 logo: ./logo.svg
 gallery:
   - src: ./1928_Der Naturfreund.jpg
-    description: Test
+    description: Titel der Vereinszeitschrift „Die Naturfreunde“
 ---
 
 In den 1890er Jahren - 20 Jahre nach der Gründung des deutschen Kaiserreichs - zu Hochzeiten von Industrialisierung und Kolonialismus gründen sich die Naturfreunde.

@@ -4,11 +4,9 @@ title: "Proteste gegen die Internationale Automobilausstellung"
 logo: ./logo.svg
 gallery:
   - src: ./2021-SmashIAA-BoschStand.jpeg
-    description: Test
-  - src: ./2023-SmashIAA-003.jpg
-    description: Test
+    description: Aktivist:innen stören den Stand von Bosch auf dem Messegelände, München, 10.09.2021. Smash IAA
   - src: ./2023-SmashIAA-005.jpg
-    description: Test
+    description: Große Bündnisdemonstration gegen die IAA, 10.09.2023. Luca Engelhard
 ---
 
 Die Internationale Automobilausstellung (IAA) fndet erstmals 1897 in Berlin statt. Die Nazis machen sie zur Massenveranstaltung: Das Auto als Volkswagen, Propaganda für die NSDAP.
