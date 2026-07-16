@@ -3,6 +3,7 @@ import { Heading, Markdown } from "./Typography";
 import ImageGallery from "react-image-gallery";
 // @ts-ignore
 import "react-image-gallery/styles/image-gallery.css";
+import { withPrefix } from "gatsby";
 
 export function Groups({
   data,
@@ -83,7 +84,7 @@ function Gallery({
     <ImageGallery
       showPlayButton={false}
       items={images.map((i) => ({
-        original: i?.src?.publicURL ?? "",
+        original: withPrefix(i?.src?.publicURL ?? ""),
         description: i?.description ?? "",
       }))}
     />

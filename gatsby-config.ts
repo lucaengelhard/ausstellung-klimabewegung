@@ -1,6 +1,7 @@
 import type { GatsbyConfig } from "gatsby"
 
 const config: GatsbyConfig = {
+	pathPrefix: `/ausstellung-klimabewegung`,
 	siteMetadata: {
 		title: `Ausstellung Klimabewegung`,
 		siteUrl: `https://lucaengelhard.github.io/ausstellung-klimabewegung/`,

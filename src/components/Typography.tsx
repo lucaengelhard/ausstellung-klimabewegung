@@ -113,7 +113,7 @@ export function Markdown({
         h6: ({ children }) => <Heading level={6}>{children}</Heading>,
         p: ({ children }) => <Paragraph>{children}</Paragraph>,
         img: ({ src, alt, ...props }) => (
-          <Fig src={src} alt={alt} description={alt} />
+          <Fig src={src} alt={alt} description={alt} {...props} />
         ),
         // @ts-ignore
         quote: ({ children, node }) => (
