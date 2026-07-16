@@ -21,6 +21,7 @@
     "gatsby-transformer-remark": "^6.16.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-image-gallery": "^2.1.2",
     "react-markdown": "^10.1.0"
   },
   "devDependencies": {

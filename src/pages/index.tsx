@@ -7,19 +7,20 @@ import { Science } from "./content/science";
 import { Groups } from "./content/groups";
 
 const IndexPage: React.FC<PageProps<Queries.IndexPageQuery>> = ({ data }) => {
-  return (
-    <main
-      style={{
-        padding: "2rem",
-        fontFamily: "Work Sans",
-        marginLeft: "auto",
-        marginRight: "auto",
-        maxWidth: 1000,
-        color: Color.RED,
-      }}
-    >
-      <Groups data={data.groups} />
-      {/* <div
+	return (
+		<main
+			style={{
+				padding: "2rem",
+				fontFamily: "Work Sans, sans-serif",
+				marginLeft: "auto",
+				marginRight: "auto",
+				maxWidth: 1000,
+				width: "100%",
+				color: Color.RED,
+			}}
+		>
+			<Groups data={data.groups} />
+			{/* <div
         style={{
           display: "flex",
           flexDirection: "column",
@@ -61,8 +62,8 @@ const IndexPage: React.FC<PageProps<Queries.IndexPageQuery>> = ({ data }) => {
       <Science />
 
       <Groups /> */}
-    </main>
-  );
+		</main>
+	);
 };
 
 export default IndexPage;
@@ -84,6 +85,12 @@ export const query = graphql`
             logo {
               publicURL
             }
+			gallery {
+				src {
+					publicURL
+				}
+				description
+			}
           }
           rawMarkdownBody
         }
