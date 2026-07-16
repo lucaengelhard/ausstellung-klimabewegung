@@ -2,6 +2,7 @@
 order: 5
 title: "Bewegung gegen Atomkraft, Atomwafen und Castor Transporte"
 logo: ./Atomkraft_Nein_Danke.svg
+short: Anti-AKW-Bewgung
 gallery:
   - src: ./1977_AntiAKW_Grohnde Demonstration_01.jpg
     description: Demonstration gegen den Bau des AKW Grohnde am 19.03.1977. Demonstrant:innen und Polizei stehen sich gegenüber. Uwe Kurzbein

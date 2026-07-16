@@ -16,6 +16,12 @@ const IndexPage: React.FC<PageProps<Queries.IndexPageQuery>> = ({ data }) => {
     ]),
   );
 
+  const groups = data.groups.nodes.toSorted(
+    (a, b) =>
+      (a.childMarkdownRemark?.frontmatter?.order ?? 0) -
+      (b.childMarkdownRemark?.frontmatter?.order ?? 0),
+  );
+
   return (
     <div style={{ fontFamily: "Work Sans, sans-serif" }}>
       <div
@@ -73,28 +79,64 @@ const IndexPage: React.FC<PageProps<Queries.IndexPageQuery>> = ({ data }) => {
           fontFamily: "Work Sans, sans-serif",
           marginLeft: "auto",
           marginRight: "auto",
-          maxWidth: 1000,
-          width: "100vw",
+
           color: Color.RED,
+          display: "grid",
+          gridTemplateColumns: "1fr 4fr 1fr",
+          gap: "3rem",
         }}
       >
-        <section>
-          <div style={{ margin: "1rem 0 0.5rem 0", fontSize: "1.5rem" }}>
-            Archivierung einer Ausstellung des{" "}
-            <a href="http://toakt.noblogs.org/">
-              Tübinger Offenen Antikapitalistischen Klimatreffens
-            </a>
+        <div style={{ position: "relative" }}>
+          <div style={{ position: "sticky", top: 20 }}>
+            {groups.map((g) => (
+              <NavItem
+                id={
+                  g.childMarkdownRemark?.frontmatter?.short ??
+                  g.childMarkdownRemark?.frontmatter?.title
+                }
+              />
+            ))}
           </div>
-        </section>
-        <Markdown content={areas["Intro"]} />
-        <Science data={data.science} />
-        <Heading>Zurückblicken, um nach vorne zu blicken</Heading>
-        <Markdown content={areas["Zurückblicken, um nach vorne zu blicken"]} />
-        <Groups data={data.groups} />
+        </div>
+        <div style={{ padding: "0 1rem" }}>
+          <section>
+            <div style={{ margin: "1rem 0 0.5rem 0", fontSize: "1.5rem" }}>
+              Archivierung einer Ausstellung des{" "}
+              <a href="http://toakt.noblogs.org/">
+                Tübinger Offenen Antikapitalistischen Klimatreffens
+              </a>
+            </div>
+          </section>
+          <Markdown content={areas["Intro"]} />
+          <Science data={data.science} />
+          <Heading>Zurückblicken, um nach vorne zu blicken</Heading>
+          <Markdown
+            content={areas["Zurückblicken, um nach vorne zu blicken"]}
+          />
+          <Groups data={groups} />
+        </div>
       </main>
     </div>
   );
 };
+
+function NavItem({ id }: { id?: string | null }) {
+  if (!id) return null;
+
+  return (
+    <a
+      style={{
+        display: "block",
+        color: Color.RED,
+        textDecoration: "none",
+        marginBottom: "0.2rem",
+      }}
+      href={`#${id}`}
+    >
+      {id}
+    </a>
+  );
+}
 
 export default IndexPage;
 
@@ -113,6 +155,7 @@ export const query = graphql`
           frontmatter {
             order
             title
+            short
             logo {
               publicURL
             }

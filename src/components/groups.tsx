@@ -4,19 +4,20 @@ import ImageGallery from "react-image-gallery";
 // @ts-ignore
 import "react-image-gallery/styles/image-gallery.css";
 
-export function Groups({ data }: { data: Queries.IndexPageQuery["groups"] }) {
-  const groups = data.nodes.toSorted(
-    (a, b) =>
-      (a.childMarkdownRemark?.frontmatter?.order ?? 0) -
-      (b.childMarkdownRemark?.frontmatter?.order ?? 0),
-  );
-
+export function Groups({
+  data,
+}: {
+  data: Queries.IndexPageQuery["groups"]["nodes"];
+}) {
   return (
     <>
-      {groups.map((node) => (
+      {data.map((node) => (
         <Group
           group={node}
-          key={node.childMarkdownRemark?.frontmatter?.title}
+          key={
+            node.childMarkdownRemark?.frontmatter?.short ??
+            node.childMarkdownRemark?.frontmatter?.title
+          }
         />
       ))}
     </>
@@ -37,7 +38,10 @@ function Group({
   } = group;
 
   return (
-    <article style={{ marginBottom: "15rem" }} id={frontmatter.title ?? ""}>
+    <article
+      style={{ marginBottom: "15rem" }}
+      id={frontmatter.short ?? frontmatter.title ?? ""}
+    >
       {frontmatter.gallery && <Gallery images={frontmatter.gallery} />}
       <Heading style={{ marginTop: "2rem", maxWidth: 400 }}>
         {frontmatter.title}
