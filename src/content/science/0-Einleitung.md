@@ -6,15 +6,23 @@ Die Klimakrise nimmt an Fahrt auf. Kipppunkte werden erreicht. Die Temperaturen 
 
 ## Die Dampfmaschine
 
+![](/science/Dampfma_gr.jpg)
+
 Am 5. Januar 1769 reicht James Watt sein Patent einer verbesserten Dampfmaschine ein. Die von ihm erreichte Effzienzsteigerung auf drei Prozent ermöglicht erstmals eine wirtschaftliche Nutzung fossiler Energie zum Antrieb beliebiger Maschinen. Dies ist der Beginn der industriellen Revolution und des weltweiten Siegeszugs des Kapitalismus.Kapitalistische Massenproduktion und immer weiterer Wachstumszwang, ohne damit die Bedürfnisse der Menschen zu decken, hat drastische Auswirkungen auf alle Ökosysteme und Stoffkreisläufe des Planeten.
 
 ## Der Treibhausefekt
 
 Kohlenstoffdioxid (CO2) und andere Treibhausgase wie Methan sowie Wasserdampf in unserer Atmosphäre sind Ursache des Treibhauseffekts. Kurzwellige Sonnenstrahlung kann relativ ungehindert bis zur Erdoberfäche gelangen und diese erwärmen. Langwellige Infrarotstrahlung refektiert an der Erdoberfäche. Treibhausgase werfen diese großteils wieder zurück und erwärmen die Erde weiter. Trotz ihres kleinen Anteils, gemessen in „parts per million“ (ppm), sind sie ausschlaggebend für die Temperatur der Erde und verantwortlich für die lebensfreundlichen Bedingungen. Ohne Treibhausgase bzw. Atmosphäre läge die Temperatur bei nur -18° Celsius. Leben in seiner heutigen Form wäre dann nicht möglich.
 
-## CO2-Konzentration undTemperatur über 800.000 Jahre
+## CO2-Konzentration und Temperatur über 800.000 Jahre
 
 In den vergangenen 800.000 Jahren schwanken die CO2-Werte der Atmosphäre zwischen 200 und 300 ppm. Temperatur und CO2 hängen direkt zusammen.Während der Eiszeiten fällt der CO2-Gehalt auf 190 ppm und steigt in Warmzeiten wieder auf 290 ppm. Der heutige um über 50 Prozent höhere CO2-Wert von 430 ppm ist einzigartig in der gesamten Menschheitsgeschichte. Bleibt es bei diesen extrem hohen Werten und weiteren Emissionen, steigt die Temperatur bis 2100 um über 5° C und in den nächsten Jahrhunderten um 10° C bis 12° C.
+
+### Warming-Stripes
+
+![](/science/warmingstripes.png)
+
+Der Klimatologe Edward Hawkins stellt 2018 eine neue Visualisierung der Temperaturabweichung vom Mittel der Jahre 1961-2010 vor. Blautöne repräsentieren niedrigere, Rottöne höhere Temperaturen. Je dunkler die Farbtöne, desto größer die Abweichung. Mittlerweile wird das Konzept auch für andere Bereiche angewendet, z.B. die Biodiversität.
 
 ## Was ist Biodiversität?
 
@@ -22,7 +30,11 @@ Biodiversität bedeutet „Artenvielfalt“ und beschreibt die Vielfalt aller Ti
 
 ### Biodiversitätskrise
 
+![](/science/gattungen.png)
+
 Die Biodiversitätkrise ist eine der größten Bedrohungen für die Menschheit. Der Kapitalismus zerstört die Biodiversität durch Industrielle Land- und Forstwirtschaft, Fischerei, Bergbau, Flächenversiegelung, Kriege usw... Globalisierung verbreitet weltweit invasive Arten, die heimische Arten verdrängen.Der Klimawandel gefährdet zudem zahllose Arten durch die Veränderung von Temperatur- und Niederschlagsmustern.
+
+![](/science/lpi.png)
 
 Das Artensterben kann nicht rückgängig gemacht werden! Derzeit verschwinden täglich 130-150 Arten, ca. 1000 Mal mehr als natürlicherweise. Derzeit gilt ein Drittel aller Arten weltweit als bedroht, viele sind bereits ausgestorben. Seit Beginn der Industrialisierung sind bereits 67 Prozent der Wälder und 87 Prozent der Feuchtgebiete verschwunden.
 

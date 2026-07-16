@@ -40,6 +40,7 @@ const IndexPage: React.FC<PageProps<Queries.IndexPageQuery>> = ({ data }) => {
           autoPlay
           controls
           muted
+          loop
         />
         <div style={{ padding: 40 }}>
           <Heading level={1}>Klimabewegung:</Heading>

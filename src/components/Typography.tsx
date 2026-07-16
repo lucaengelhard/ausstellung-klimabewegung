@@ -4,6 +4,7 @@ import { Color } from "./styles";
 import remarkDirective from "remark-directive";
 import { Video } from "./Video";
 import { Lisa } from "./Audio";
+import { Fig } from "./Image";
 
 export type HeadingLevel = 1 | 2 | 3 | 4 | 5 | 6;
 
@@ -38,7 +39,13 @@ export function Quote({
   );
 }
 
-export function Markdown({ content: input }: { content: string }) {
+export function Markdown({
+  content: input,
+  markdownPath,
+}: {
+  content: string;
+  markdownPath?: string;
+}) {
   const content = input.replace(/(?<![\\:]):(?!:)/g, "\\:");
   return (
     <ReactMarkdown
@@ -105,6 +112,9 @@ export function Markdown({ content: input }: { content: string }) {
         h5: ({ children }) => <Heading level={5}>{children}</Heading>,
         h6: ({ children }) => <Heading level={6}>{children}</Heading>,
         p: ({ children }) => <Paragraph>{children}</Paragraph>,
+        img: ({ src, alt, ...props }) => (
+          <Fig src={src} alt={alt} description={alt} />
+        ),
         // @ts-ignore
         quote: ({ children, node }) => (
           <Quote description={node.properties.description}>{children}</Quote>

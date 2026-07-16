@@ -12,7 +12,7 @@ export function Science({ data }: { data: Queries.IndexPageQuery["science"] }) {
           {node.frontmatter?.title && (
             <Heading>{node.frontmatter.title}</Heading>
           )}
-          <Markdown content={node.rawMarkdownBody ?? ""} />
+          <Markdown content={node.rawMarkdownBody ?? ""} markdownPath="" />
         </article>
       ))}
     </section>
