@@ -1,10 +1,11 @@
 import React from "react";
-import { Heading } from "../../components/Typography";
+import { Heading, Markdown } from "../../components/Typography";
 
 import ReactMarkdown from "react-markdown";
 import ImageGallery from "react-image-gallery";
 // @ts-ignore
 import "react-image-gallery/styles/image-gallery.css";
+
 
 export function Groups({ data }: { data: Queries.IndexPageQuery["groups"] }) {
 	return (
@@ -46,7 +47,7 @@ function Group({
 					/>
 				)}
 				<div style={{ gridColumnStart: 2, gridColumnEnd: 3 }}>
-					<ReactMarkdown>{rawMarkdownBody}</ReactMarkdown>
+					<Markdown content={rawMarkdownBody ?? ""} />
 				</div>
 			</div>
 		</article>
