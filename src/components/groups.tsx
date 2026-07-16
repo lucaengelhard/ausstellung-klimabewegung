@@ -57,7 +57,7 @@ function Group({
       >
         {frontmatter.logo?.publicURL && (
           <img
-            src={frontmatter.logo?.publicURL}
+            src={withPrefix(frontmatter.logo?.publicURL)}
             style={{ width: "100%", marginTop: "4rem", objectFit: "cover" }}
           />
         )}
