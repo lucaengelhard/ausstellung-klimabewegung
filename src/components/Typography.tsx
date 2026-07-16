@@ -2,6 +2,8 @@ import * as React from "react";
 import ReactMarkdown from "react-markdown";
 import { Color } from "./styles";
 import remarkDirective from "remark-directive";
+import { Video } from "./Video";
+import { Lisa } from "./Audio";
 
 export type HeadingLevel = 1 | 2 | 3 | 4 | 5 | 6;
 
@@ -59,14 +61,7 @@ export function Markdown({ content: input }: { content: string }) {
             return "";
           }
 
-          function visit(node: {
-            type: string;
-            name: string;
-            data: { hName?: any; hProperties?: any };
-            attributes: { description: any };
-            children: any[];
-            position: any;
-          }) {
+          function visit(node: any) {
             if (node.type === "containerDirective" && node.name === "quote") {
               node.data ||= {};
               node.data.hName = "quote";
@@ -82,8 +77,20 @@ export function Markdown({ content: input }: { content: string }) {
               ];
             }
 
+            if (node.type === "containerDirective" && node.name === "video") {
+              node.data ||= {};
+              node.data.hName = "jumpshare";
+              node.data.hProperties = {
+                embed: node.attributes.embed.replaceAll("\\:", ":"),
+              };
+            }
+            if (node.type === "containerDirective" && node.name === "Lisa") {
+              node.data ||= {};
+              node.data.hName = "lisa";
+            }
+
             if (node.children && Array.isArray(node.children))
-              node.children.forEach((child) => {
+              node.children.forEach((child: any) => {
                 visit(child);
               });
           }
@@ -102,6 +109,11 @@ export function Markdown({ content: input }: { content: string }) {
         quote: ({ children, node }) => (
           <Quote description={node.properties.description}>{children}</Quote>
         ),
+        // @ts-ignore
+        jumpshare: ({ children, node }) => (
+          <Video url={node.properties.embed}>{children}</Video>
+        ),
+        lisa: () => <Lisa />,
       }}
     >
       {content}

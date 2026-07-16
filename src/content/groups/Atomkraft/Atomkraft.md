@@ -1,6 +1,7 @@
 ---
 order: 5
 title: "Bewegung gegen Atomkraft, Atomwafen und Castor Transporte"
+logo: ./Atomkraft_Nein_Danke.svg
 gallery:
   - src: ./1977_AntiAKW_Grohnde Demonstration_01.jpg
     description: Test

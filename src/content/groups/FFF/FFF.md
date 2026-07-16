@@ -1,5 +1,5 @@
 ---
-order: 12
+order: 13
 title: "Schulstreik fürs Klima: Fridays for Future (FFF)"
 logo: ./logo.svg
 gallery:

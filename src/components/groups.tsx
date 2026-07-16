@@ -53,7 +53,7 @@ function Group({
         {frontmatter.logo?.publicURL && (
           <img
             src={frontmatter.logo?.publicURL}
-            style={{ width: "100%", marginTop: "4rem" }}
+            style={{ width: "100%", marginTop: "4rem", objectFit: "cover" }}
           />
         )}
         <div style={{ gridColumnStart: 2, gridColumnEnd: 3 }}>
