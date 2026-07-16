@@ -7,7 +7,7 @@ gallery:
     description: Gemeinsamer Streik von Busfahrer:innen, Gewerkschaft und Klimatreffen, Tübingen, 22.02.2025. Luca Engelhard
   - src: ./190920-klimatreffen-001.jpg
     description: Antikapitalistische Beteiligung am globalen Klimastreik, Stuttgart, 20.09.2019. Luca Engelhard
-  - src: ./250109-klimatreffen-002.jpg
+  - src: ./250109-busstreik-010.jpg
     description: Aktivistinnen unterstützen die streikenden Busfahrer:innen, Tübingen, 09.01.2025. Luca Engelhard
   - src: ./250222-klimatreffen-006.jpg
     description: Gemeinsamer Streik von Busfahrer:innen, Gewerkschaft und Klimatreffen, Tübingen, 22.02.2025. Luca Engelhard
