@@ -1,6 +1,7 @@
 ---
 order: 4
 title: "Movement for the Survival of the Ogoni People, Nigeria"
+short: MOSOP
 gallery:
   - src: ./1995_Ogoni_Ken Saro-Wiwa.jpg
     description: Ken Saro-Wiwa, Gründer der Bewegung Movement for the Survival of the Ogoni People (MOSOP), hingerichtet am 10.11.1995 wegen erlogenen, von der nigerianischen Regierung inszenierten Vorwürfen. flickr, @dignidadrebelde

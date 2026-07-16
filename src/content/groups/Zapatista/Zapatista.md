@@ -1,6 +1,7 @@
 ---
 order: 7
 title: "Zapatistas für Selbstverwaltung, Frauenbefreiung und indigene Lebensweise"
+short: "Zapatistas"
 gallery:
   - src: ./1994_Zapatistas_Revolution_01.jpg
     description: Bewaffneter Aufstand der Zapatistas in Mexio um 1994. Markus S. Schulz

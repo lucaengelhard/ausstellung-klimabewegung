@@ -1,6 +1,7 @@
 ---
 order: 12
 title: "Act Now: Extinction Rebellion"
+shotz: "Extinction Rebellion"
 logo: ./logo.svg
 gallery:
   - src: ./2019-XR-002.jpg

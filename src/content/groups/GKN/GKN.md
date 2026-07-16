@@ -1,6 +1,7 @@
 ---
 order: 20
 title: "Insorgiamo! Das exGKN in Florenz kämpft für Konversion"
+short: exGKN
 logo: ./logo.svg
 ---
 

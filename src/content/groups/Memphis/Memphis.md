@@ -1,6 +1,7 @@
 ---
 order: 2
 title: "Kampf gegen Rassismus und für Umweltgerechtigkeit: der Streik von Memphis, USA"
+short: Streik von Memphis
 gallery:
   - src: ./1968_I am a Man.jpg
     description: Streik der Arbeiter der Müllabfuhr in Memphis, USA, 1968. Ernest Withers

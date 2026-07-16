@@ -1,6 +1,7 @@
 ---
 order: 0
 title: "Organisation der Arbeiter:innenbewegung: die Naturfreunde"
+short: Naturfreunde
 logo: ./logo.svg
 gallery:
   - src: ./1928_Der Naturfreund.jpg

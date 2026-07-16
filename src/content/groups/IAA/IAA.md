@@ -1,6 +1,7 @@
 ---
 order: 16
 title: "Proteste gegen die Internationale Automobilausstellung"
+short: IAA
 logo: ./logo.svg
 gallery:
   - src: ./2021-SmashIAA-BoschStand.jpeg

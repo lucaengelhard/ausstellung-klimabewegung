@@ -1,6 +1,7 @@
 ---
 order: 3
 title: "Gewerkschaft der Kautschukzapfer in Xapuri, Brasilien"
+short: Xapuri
 gallery:
   - src: ./1986_Xaipuri_Marina Silva.jpg
     description: Aktivistin Marina Silva führt eine „Empate“ [Form des Widerstands] in Bordon, Xapouri an, 1986. Marina Silva

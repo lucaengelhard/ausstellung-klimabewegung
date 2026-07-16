@@ -1,6 +1,7 @@
 ---
 order: 9
 title: "Revolution in Kurdistan, Selbstverwaltung in Rojava"
+short: Rojava
 gallery:
   - src: ./2015_YPJ_01.jpg
     description: Kämpferinnen der YPJ, aufgenommen 2015 in Rojava. flickr, @kurdishstruggle

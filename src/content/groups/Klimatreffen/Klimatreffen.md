@@ -1,6 +1,7 @@
 ---
 order: 17
 title: "Antikapitalistisches Klimatrefen"
+short: Klimatreffen
 logo: ./logo.svg
 gallery:
   - src: ./250222-klimatreffen-005.jpg

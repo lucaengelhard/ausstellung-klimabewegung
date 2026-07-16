@@ -1,6 +1,7 @@
 ---
 order: 1
 title: "Greenpeace: Für Frieden in Vietnam und gegen Atomwaffen"
+short: "Greenpeace"
 logo: ./Greenpeace_logo.svg
 gallery:
   - src: ./1979_Greenpeace_Rainbow Warrior.jpg
