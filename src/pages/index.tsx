@@ -1,11 +1,12 @@
 import * as React from "react";
-import type { HeadFC, PageProps } from "gatsby";
+import { graphql, type HeadFC, type PageProps } from "gatsby";
+import ReactMarkdown from "react-markdown";
 import { Chapter, Heading, Paragraph, Quote } from "../components/Typography";
 import { Color } from "../components/styles";
 import { Science } from "./content/science";
 import { Groups } from "./content/groups";
 
-const IndexPage: React.FC<PageProps> = () => {
+const IndexPage: React.FC<PageProps<Queries.IndexPageQuery>> = ({ data }) => {
   return (
     <main
       style={{
@@ -17,7 +18,8 @@ const IndexPage: React.FC<PageProps> = () => {
         color: Color.RED,
       }}
     >
-      <div
+      <Groups data={data.groups} />
+      {/* <div
         style={{
           display: "flex",
           flexDirection: "column",
@@ -58,7 +60,7 @@ const IndexPage: React.FC<PageProps> = () => {
       </section>
       <Science />
 
-      <Groups />
+      <Groups /> */}
     </main>
   );
 };
@@ -66,3 +68,26 @@ const IndexPage: React.FC<PageProps> = () => {
 export default IndexPage;
 
 export const Head: HeadFC = () => <title>Ausstellung Klimabewegung</title>;
+
+export const query = graphql`
+  query IndexPage {
+    groups: allFile(
+      filter: {
+        extension: { eq: "md" }
+        relativeDirectory: { regex: "/groups/" }
+      }
+    ) {
+      nodes {
+        childMarkdownRemark {
+          frontmatter {
+            title
+            logo {
+              publicURL
+            }
+          }
+          rawMarkdownBody
+        }
+      }
+    }
+  }
+`;
