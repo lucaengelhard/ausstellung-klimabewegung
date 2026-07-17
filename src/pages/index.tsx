@@ -2,13 +2,16 @@ import * as React from "react";
 // @ts-ignore
 import "./styles.css";
 import { graphql, type HeadFC, type PageProps } from "gatsby";
-import { Color } from "../components/styles";
-import { Science } from "../components/science";
-import { Groups } from "../components/groups";
-import { Heading, Markdown } from "../components/Typography";
+import { Breakpoint, Color } from "../lib/styles";
+import { Science } from "../lib/science";
+import { Groups } from "../lib/groups";
+import { Heading, Markdown } from "../lib/Typography";
 import { ChevronDown } from "lucide-react";
+import { useWindowSize } from "../lib/hooks";
 
 const IndexPage: React.FC<PageProps<Queries.IndexPageQuery>> = ({ data }) => {
+  const { breakpoint } = useWindowSize();
+
   const areas = Object.fromEntries(
     data.areas.nodes.map((node) => [
       node.frontmatter?.title,
@@ -27,7 +30,7 @@ const IndexPage: React.FC<PageProps<Queries.IndexPageQuery>> = ({ data }) => {
       <div
         style={{
           position: "relative",
-          fontSize: "2.5rem",
+          fontSize: breakpoint<"fontSize">(Breakpoint.MD, "2.5rem", "1.5rem"),
           height: "100vh",
           width: "100vw",
         }}
@@ -82,11 +85,20 @@ const IndexPage: React.FC<PageProps<Queries.IndexPageQuery>> = ({ data }) => {
 
           color: Color.RED,
           display: "grid",
-          gridTemplateColumns: "1fr 4fr 1fr",
+          gridTemplateColumns: breakpoint<"gridTemplateColumns">(
+            Breakpoint.MD,
+            breakpoint<"gridTemplateColumns">(1000, "1fr 4fr 1fr", "1fr 4fr"),
+            "1fr",
+          ),
           gap: "3rem",
         }}
       >
-        <div style={{ position: "relative" }}>
+        <div
+          style={{
+            position: "relative",
+            display: breakpoint<"display">(Breakpoint.MD, "block", "none"),
+          }}
+        >
           <div style={{ position: "sticky", top: 20 }}>
             {groups.map((g) => (
               <NavItem

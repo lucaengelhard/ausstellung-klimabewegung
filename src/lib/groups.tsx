@@ -4,6 +4,8 @@ import ImageGallery from "react-image-gallery";
 // @ts-ignore
 import "react-image-gallery/styles/image-gallery.css";
 import { withPrefix } from "gatsby";
+import { useWindowSize } from "./hooks";
+import { Breakpoint } from "./styles";
 
 export function Groups({
   data,
@@ -30,6 +32,8 @@ function Group({
 }: {
   group: Queries.IndexPageQuery["groups"]["nodes"][number];
 }) {
+  const { breakpoint } = useWindowSize();
+
   if (!group.childMarkdownRemark || !group.childMarkdownRemark.frontmatter) {
     return null;
   }
@@ -44,9 +48,7 @@ function Group({
       id={frontmatter.short ?? frontmatter.title ?? ""}
     >
       {frontmatter.gallery && <Gallery images={frontmatter.gallery} />}
-      <Heading style={{ marginTop: "2rem", maxWidth: 400 }}>
-        {frontmatter.title}
-      </Heading>
+
       <div
         style={{
           display: "grid",
@@ -58,10 +60,34 @@ function Group({
         {frontmatter.logo?.publicURL && (
           <img
             src={withPrefix(frontmatter.logo?.publicURL)}
-            style={{ width: "100%", marginTop: "4rem", objectFit: "cover" }}
+            style={{
+              width: "100%",
+              marginTop: "2rem",
+              objectFit: "cover",
+              gridRowStart: breakpoint<"gridRowStart">(Breakpoint.SM, 2, 1),
+              gridColumnStart: 1,
+              gridColumnEnd: 2,
+            }}
           />
         )}
-        <div style={{ gridColumnStart: 2, gridColumnEnd: 3 }}>
+        <Heading
+          style={{
+            marginTop: "2rem",
+            maxWidth: 400,
+            gridColumnStart: breakpoint<"gridColumnStart">(Breakpoint.SM, 1, 2),
+            gridColumnEnd: 3,
+            gridRowStart: 1,
+          }}
+        >
+          {frontmatter.title}
+        </Heading>
+        <div
+          style={{
+            gridColumnStart: breakpoint<"gridColumnStart">(Breakpoint.SM, 2, 1),
+            gridColumnEnd: 3,
+            gridRowStart: 2,
+          }}
+        >
           <Markdown content={rawMarkdownBody ?? ""} />
         </div>
       </div>
