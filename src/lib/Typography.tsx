@@ -47,13 +47,7 @@ export function Quote({
   );
 }
 
-export function Markdown({
-  content: input,
-  markdownPath,
-}: {
-  content: string;
-  markdownPath?: string;
-}) {
+export function Markdown({ content: input }: { content: string }) {
   const content = input.replace(/(?<![\\:]):(?!:)/g, "\\:");
   return (
     <ReactMarkdown
