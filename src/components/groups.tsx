@@ -57,7 +57,7 @@ function Group({
       >
         {frontmatter.logo?.publicURL && (
           <img
-            src={frontmatter.logo?.publicURL}
+            src={withPrefix(frontmatter.logo?.publicURL)}
             style={{ width: "100%", marginTop: "4rem", objectFit: "cover" }}
           />
         )}
@@ -84,7 +84,7 @@ function Gallery({
     <ImageGallery
       showPlayButton={false}
       items={images.map((i) => ({
-        original: i?.src?.publicURL ?? "",
+        original: withPrefix(i?.src?.publicURL ?? ""),
         description: i?.description ?? "",
       }))}
     />
