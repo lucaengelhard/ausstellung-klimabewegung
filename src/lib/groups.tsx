@@ -80,7 +80,6 @@ function Group({
         <div
           style={{
             gridColumnEnd: 3,
-            gridRowStart: 2,
           }}
           className="group-content"
         >

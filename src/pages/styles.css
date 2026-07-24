@@ -34,6 +34,7 @@ nav {
 
 .group-content {
   grid-column-start: 2;
+  grid-row-start: 2
 }
 
 .quote {
@@ -74,5 +75,46 @@ nav {
 
   .quote {
     font-size: 2rem;
+  }
+}
+
+@media (max-width: 500px) {
+.quote {
+    font-size: 1rem;
+  }
+
+  .group-image {
+    grid-row-start: 2;
+	margin-top: 0 !important;
+  }
+
+  .group-heading {
+    grid-column-start: 1;
+	font-size: 1.5rem;
+  }
+
+  .group-content {
+	grid-row-start: 3;
+  }
+
+  .group-content p {
+		font-size: 1.1rem !important;
+  }
+
+  article {
+	margin-bottom: 8rem !important;
+  }
+
+  .image-gallery {
+	display: none;
+  }
+
+  .home-title {
+	font-size: 1rem;
+  }
+
+  main {
+	padding: 0 !important;
+	max-width: 100vw;
   }
 }
