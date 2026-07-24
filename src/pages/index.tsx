@@ -2,16 +2,13 @@ import * as React from "react";
 // @ts-ignore
 import "./styles.css";
 import { graphql, type HeadFC, type PageProps } from "gatsby";
-import { Breakpoint, Color } from "../lib/styles";
+import { Color } from "../lib/styles";
 import { Science } from "../lib/science";
 import { Groups } from "../lib/groups";
 import { Heading, Markdown } from "../lib/Typography";
 import { ChevronDown } from "lucide-react";
-import { useWindowSize } from "../lib/hooks";
 
 const IndexPage: React.FC<PageProps<Queries.IndexPageQuery>> = ({ data }) => {
-  const { breakpoint } = useWindowSize();
-
   const areas = Object.fromEntries(
     data.areas.nodes.map((node) => [
       node.frontmatter?.title,
@@ -30,10 +27,10 @@ const IndexPage: React.FC<PageProps<Queries.IndexPageQuery>> = ({ data }) => {
       <div
         style={{
           position: "relative",
-          fontSize: breakpoint<"fontSize">(Breakpoint.MD, "2.5rem", "1.5rem"),
           height: "100vh",
           width: "100vw",
         }}
+        className="home-title"
       >
         <video
           style={{
@@ -85,18 +82,12 @@ const IndexPage: React.FC<PageProps<Queries.IndexPageQuery>> = ({ data }) => {
 
           color: Color.RED,
           display: "grid",
-          gridTemplateColumns: breakpoint<"gridTemplateColumns">(
-            Breakpoint.MD,
-            breakpoint<"gridTemplateColumns">(1000, "1fr 4fr 1fr", "1fr 4fr"),
-            "1fr",
-          ),
           gap: "3rem",
         }}
       >
-        <div
+        <nav
           style={{
             position: "relative",
-            display: breakpoint<"display">(Breakpoint.MD, "block", "none"),
           }}
         >
           <div style={{ position: "sticky", top: 20 }}>
@@ -109,7 +100,7 @@ const IndexPage: React.FC<PageProps<Queries.IndexPageQuery>> = ({ data }) => {
               />
             ))}
           </div>
-        </div>
+        </nav>
         <div style={{ padding: "0 1rem" }}>
           <section>
             <div style={{ margin: "1rem 0 0.5rem 0", fontSize: "1.5rem" }}>

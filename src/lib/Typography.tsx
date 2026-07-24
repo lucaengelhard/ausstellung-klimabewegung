@@ -1,11 +1,10 @@
 import * as React from "react";
 import ReactMarkdown from "react-markdown";
-import { Breakpoint, Color } from "./styles";
+import { Color } from "./styles";
 import remarkDirective from "remark-directive";
 import { Video } from "./Video";
 import { Lisa } from "./Audio";
 import { Fig } from "./Image";
-import { useWindowSize } from "./hooks";
 
 export type HeadingLevel = 1 | 2 | 3 | 4 | 5 | 6;
 
@@ -32,14 +31,12 @@ export function Quote({
   children: string;
   description: string;
 }) {
-  const { breakpoint } = useWindowSize();
-
   return (
     <div
       style={{
         width: "100%",
-        fontSize: breakpoint(Breakpoint.SM, "4rem", "2rem"),
       }}
+      className="quote"
     >
       <p style={{ fontWeight: "bold" }}>» {children}</p>
       <p style={{ textAlign: "right" }}>― {description}</p>

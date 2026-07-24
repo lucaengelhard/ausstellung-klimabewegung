@@ -1,13 +1,78 @@
-html, 
+html,
 body {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 a {
-	cursor: pointer;
+  cursor: pointer;
 }
 
 a:hover {
-	font-weight: bold;
+  font-weight: bold;
+}
+
+main {
+	grid-template-columns: 1fr 4fr 1fr;
+}
+
+nav {
+	display: block;
+}
+
+.home-title {
+	font-size: 2.5rem;
+}
+
+.group-image {
+  grid-row-start: 2;
+}
+
+.group-heading {
+  grid-column-start: 1;
+}
+
+.group-content {
+  grid-column-start: 2;
+}
+
+.quote {
+  font-size: 4rem;
+}
+
+@media (max-width: 900px ) {
+	main {
+		grid-template-columns: 1fr 4fr;
+	}
+
+	nav {
+	display: none;
+}
+
+
+	.home-title {
+	font-size: 1.5rem;
+}
+}
+
+@media (max-width: 700px) {
+		main {
+		grid-template-columns: 1fr;
+	}
+
+  .group-image {
+    grid-row-start: 1;
+  }
+
+  .group-heading {
+    grid-column-start: 2;
+  }
+
+  .group-content {
+    grid-column-start: 1;
+  }
+
+  .quote {
+    font-size: 2rem;
+  }
 }
